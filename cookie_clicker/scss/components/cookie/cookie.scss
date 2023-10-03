@@ -1,0 +1,100 @@
+@use "../../abstracts/colors.scss";
+
+.cookie{
+    width:30rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 0 10rem 0rem map-get(colors.$cookie, "spots"),
+        0 2rem 3rem 0rem rgba($color: #000000, $alpha: 0.2);
+    background: 
+        map-get(colors.$cookie,"background");
+
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid map-get(colors.$cookie, "spots");
+    transition: 0.2s all;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+
+    &--choco{
+        background: #3C2A21;
+        box-shadow: 
+        0 2rem 3rem 0rem rgba($color: #000000, $alpha: 0.2);
+        border: 1rem solid #1C0A00;
+    }
+
+    &--choco &__spots{
+        background: #1C0A00;
+        border-radius: 20%;
+    }
+
+    &--valvet{
+        background: #8A1C20;
+    }
+
+    &--valvet &__spots{
+        background: #F5F4F2;
+    }
+
+    &__spots{
+        width: 5rem;
+        aspect-ratio: 1/1;
+        background: map-get(colors.$cookie, "spots");
+        border-radius: 45%;
+        position: absolute;
+        
+
+
+        &--first{
+            top: 10%;
+            left: 5%;
+        }
+
+        &--second{
+            right: 10%;
+            top: 5%;
+        }
+
+        &--third{
+            right: 5%;
+            bottom: 10%;
+        }
+
+        &--forth{
+            left: 5%;
+            bottom: 10%;
+        }
+
+        &--fifth{
+            top: 25%;
+            left: 30%;
+        }
+        &--sixth{
+            top: 30%;
+            left: 25%;
+        }
+        &--seventh{
+            top:50%;
+            left:50%;
+        }
+        &--eigth{
+            top: 60%;
+            left: 55%;
+        }
+        &--ninth{
+            top: 10%;
+            left: 45%;
+        }
+        &--tenth{
+            top: 60%;
+            left: 30%;
+        }
+    }
+}

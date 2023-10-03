@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookieDough</title>
+    <script src="https://kit.fontawesome.com/cafa464828.js" crossorigin="anonymous"></script>
+    <script src="/js/main.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <ul class="upgrades">
+            <li class="upgrades__upgrade" id="js--choco">
+                <i class="fa-solid fa-cookie-bite"></i>
+                Chocolate Cookie
+            </li>
+            <li class="upgrades__upgrade" id="js--multi">
+                <i class="fa-solid fa-calculator"></i>
+                Multiplier
+            </li>
+            <li class="upgrades__upgrade" id="js--autoScore">
+                <i class="fa-solid fa-forward"></i>
+                Auto-score
+            </li>
+        </ul>
+        <div class="buttonAndavatarWrap">
+            <button id="js--save" class="save">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Opslaan
+            </button>
+            <figure class="avatar">
+                <div class="avatar__head"></div>
+                <div class="avatar__body"></div>
+            </figure>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <h1 class="score" id="js--score">10000</h1>
+        <figure class="cookie" id="js--cookie">
+            <div class="cookie__spots cookie__spots--first"></div>
+            <div class="cookie__spots cookie__spots--second"></div>
+            <div class="cookie__spots cookie__spots--third"></div>
+            <div class="cookie__spots cookie__spots--forth"></div>
+            <div class="cookie__spots cookie__spots--fifth"></div>
+            <div class="cookie__spots cookie__spots--sixth"></div>
+            <div class="cookie__spots cookie__spots--seventh"></div>
+            <div class="cookie__spots cookie__spots--eigth"></div>
+            <div class="cookie__spots cookie__spots--ninth"></div>
+            <div class="cookie__spots cookie__spots--tenth"></div>
+        </figure>
+    </main>
+    <ul class="upgradesMobile">
+        <li class="upgradesMobile__upgrade" id="js--choco--mobile">
+            <i class="fa-solid fa-cookie-bite"></i>
+            Choco
+        </li>
+
+        <li class="upgradesMobile__upgrade" id="js--multi--mobile">
+            <i class="fa-solid fa-calculator"></i>
+            2x
+        </li>
+
+        <li class="upgradesMobile__upgrade" id="js--auto--mobile">
+            <i class="fa-solid fa-forward"></i>
+            Auto
+        </li>
+    </ul>
+</body>
+
+</html>
